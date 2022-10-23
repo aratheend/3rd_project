@@ -1,0 +1,350 @@
+/* google FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'montserrat',sans-serif;
+}
+
+
+/* HEADER */
+.header {
+    background-color: #1B1A20;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left a {
+    color: #FED136;
+    display: inline-block;
+    padding: 20px 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.header .right ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.header .right ul li a {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 25px;
+    transition: 0.7s ease;
+}
+
+.header .right ul li a:hover {
+    color: #FED136;
+}
+
+
+/* SECTION-1 */
+.welcome {
+    background: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.welcome h1 {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.welcome a {
+    color: white;
+    background-color: #FED136;
+    display: inline-block;
+    padding: 25px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.welcome a:hover {
+    background-color: #D9AA00;
+}
+
+
+/* SECTION-2 */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.services .text p {
+    color: #6C7690;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.services .text h1 {
+    font-size: 40px;
+    text-transform: uppercase;   ;
+}
+.services .container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .container .box {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .container .box i {
+    background-color: rgb(255, 184, 52);
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.services .container .box i {
+    color: white;
+    font-size: 70px;
+}
+
+.services .container .box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.services .container .box p {
+    color: #6C7690;
+    font-size: 23px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* SECTION-3 */
+.portfolio {
+   background-color: #F8F9FA;
+   padding-block: 30px; 
+}
+
+.portfolio h2 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.portfolio p {
+    font-size: 20px;
+    font-style: italic;
+    color: #6C7690;
+}
+
+.portfolio .same {
+    text-align: center;
+}
+
+.portfolio .container {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio .container .box {
+    background-color: white;
+    margin: 0 20px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    position: relative;
+}
+
+.portfolio .container .box .over {
+    background-color: #FED136;
+    opacity: 0;
+    padding: 151px 210.5px;  /*NECE yaza bilerik?*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.portfolio .container .box .over:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.portfolio .container .box .over i {
+    font-size: 40px;
+}
+
+.portfolio .container .box img {
+    width: 100%;
+}
+
+.portfolio .container .box p {
+    padding: 20px 25px;
+}
+
+.portfolio .container .box span {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* SECTION-4 */
+.about .container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about .container .beginning {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 80px;
+}
+
+.about .container .beginning h1 {
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about .container .beginning p {
+    font-size: 20px;
+    font-style: italic;
+    color: #6C7690;
+}
+
+.about .container .left,.right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.about .container .box {
+    display: flex;
+    flex-basis: 300px;
+}
+
+.about .container .box img {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #E9ECEF;
+    border-radius: 50%;
+}
+
+.about .container .left .box .text {
+    order: 0;
+    text-align: right;
+    margin-right: 50px;
+}
+
+
+.about .container .right .box .text {
+    order: 1;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.about .container .middle p {
+    background-color: #FFC800;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    border: 10px solid #E9ECEF;
+    border-radius: 50%;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;   
+}
+
+/* FOOTER */
+.footer .container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container .start p {
+    font-size: 20px;    
+}
+
+.footer .container .mid i {
+    background-color: #1C1F23;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .container .end a {
+    color: #1B1A20;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
